@@ -11,7 +11,7 @@ const app = express();
 const { PORT } = require("./config/dotenv");
 
 const corsOptions = {
-  origin: "http://127.0.0.1:5500", // Allow only the Live Server frontend
+  origin: "*", // Allow only the Live Server frontend
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
   credentials: true, // If you're sending cookies or credentials
 };
