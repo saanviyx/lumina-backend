@@ -1,7 +1,7 @@
 const { getDb } = require("../config/database");
 
 function getCalendarCollection() {
-  return getDb().collection("Calendar"); // Renamed collection to avoid conflicts
+  return getDb().collection("Calendar");
 }
 
 async function getUserCalendarEntries(username) {
