@@ -22,7 +22,7 @@ function runMLModel(imageBase64) {
     fs.writeFileSync(imagePath, Buffer.from(base64Data, 'base64'));
     
     // Get the absolute path to the ML script
-    const mlScriptPath = path.resolve(__dirname, '../../ml/scripts/main.py');
+    const mlScriptPath = path.resolve(__dirname, '../ml/scripts/main.py');
     
     // Run the ML script using Python
     const pythonProcess = spawn('python', [mlScriptPath, imagePath], {
