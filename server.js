@@ -11,7 +11,7 @@ const app = express();
 const { PORT } = require("./config/dotenv");
 
 const corsOptions = {
-  origin: "*", // Allow only the Live Server frontend
+  origin: 'https://saanviyx.github.io', // Allow only the Live Server frontend
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
   credentials: true, // If you're sending cookies or credentials
 };
